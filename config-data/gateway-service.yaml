@@ -8,7 +8,8 @@ eureka:
       default-zone: http://localhost:8761/eureka
     instance:
       hostname: hostname
-      
+
+ 
 spring:
   cloud:
     gateway:
@@ -28,4 +29,4 @@ spring:
           uri: lb://moto-service
           predicates:
             - Path=/moto/** 
-      	
+   
